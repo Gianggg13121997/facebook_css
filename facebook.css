@@ -4,17 +4,20 @@
 .container {
 width: 100%;
 height: 100vh;
-background-color: bisque;
+
 }
 .container .header {
     width: 100%;
     height: 6%;
-    background-color: blue;
+    display: flex;
+    
+    
 }
 .container .main{
     width: 100%;
     height: 94%;
     display: flex;
+    align-items: center;
 }
 .main .left-main {
     width: 20%;
@@ -25,7 +28,6 @@ background-color: bisque;
 .main .mid{
     width: 60%;
     height: 100%;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,10 +40,13 @@ background-color: bisque;
     border: 1px solid black;
     float: left;
 }
-.left-main .up, .down {
+.left-main .up {
     width: 100%;
-    height: 50%;
-    border: 1px solid black;
+    height: 55%;
+}
+.left-main .down {
+    width: 100%;
+    height: 45%;
 }
 .mid .story {
     width: 60%;
@@ -72,6 +77,100 @@ background-color: bisque;
     height: 90%;
     border: 1px solid black;
 }
+.header .logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 0 10px;
+    float: left;
+}
+.header .search input{
+    width: 250px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    margin-right: 290px;
+    
+}
+.header .phimtat {
+    width: 35%;
+    height: 100%;
+    float:  left;
+    display: flex;
+    justify-content: center;
+    margin-right: 380px;
+}
+.phimtat .item img{
+    width: 50px;
+    height: 50px;
+    margin: 0 40px;
+}
+.header .infor{
+    width: 13%;
+    height: 100%;
+    display: flex;
+}
+.infor .item img{
+    width: 50px;
+    height: 50px;
+    margin: 0 4px;
+    border-radius: 25px;
+}
+.left-main .up .item{
+    width: 100%;
+    height: calc(100%/9);
+}
+.up .item .logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    float: left;
+    margin-right: 10px;
+    
+}
+.up,.down .item .name{
+    width: 150px;
+    height: 50px;
+    float: left;
+}
+.left-main .down .item{
+    width: 100%;
+    height: calc(100%/6);
+}
+.down .item .logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+.main .mid .item{
+    width: calc(100%/5);
+    height: 100%;
+    border: 1px solid black;
+    float: left;
+}
+.main .mid .status .logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    margin: 10px;
+    float: left;
+    align-items: center;
+}
+.status input{
+    width: 500px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 10px 0;
+}
+
+
 
 @media only screen and (max-width: 1000px) { 
     .left-main {
